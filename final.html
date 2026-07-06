@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Compass</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9ff;
+      color: #222;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #5940d7;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #6d28d9, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero button {
+      background-color: white;
+      color: #2563eb;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #f3f4f6;
+    }
+
+    /* Problem Section */
+    .problem {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .problem h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #6d28d9;
+    }
+
+    .problem p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 60px 20px;
+      background-color: #f3f4ff;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #6d28d9;
+    }
+
+    .feature-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: white;
+      width: 250px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .box h3 {
+      margin-bottom: 15px;
+      color: #2563eb;
+    }
+
+    .box p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #7c3aed, #3b82f6);
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      background-color: white;
+      color: #2563eb;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #f3f4f6;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #111827;
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    .footer a {
+      color: #d1d5db;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 16px;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    .copyright {
+      margin-top: 12px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .problem h2,
+      .features h2,
+      .cta h2 {
+        font-size: 26px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Student Compass</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Your College Journey Starts with Clarity</h1>
+    <p>
+      Student Compass helps first-year students understand their degree, semester,
+      skills, and career path — all in one place.
+    </p>
+    <button>🚀 Start My Journey</button>
+  </div>
+
+  <!-- Problem Section -->
+  <div class="problem">
+    <h2>Why Student Compass?</h2>
+    <p>
+      Many students enter college without knowing how their degree works, what subjects they will study,
+      how internal assessments, semester exams, credits, CGPA, projects, internships, and placements fit together.
+      This confusion makes it hard to plan their college journey and career path from the beginning.
+      Student Compass solves this by giving students a clear roadmap for their academics, skills, and future opportunities.
+    </p>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <h2>What Student Compass Gives You</h2>
+
+    <div class="feature-boxes">
+      <div class="box">
+        <h3>Semester Guidance</h3>
+        <p>Understand subjects, semester flow, credits, and internal assessments clearly.</p>
+      </div>
+
+      <div class="box">
+        <h3>Skill Roadmap</h3>
+        <p>Know which technical and soft skills you should learn apart from college subjects.</p>
+      </div>
+
+      <div class="box">
+        <h3>Career Direction</h3>
+        <p>Explore job opportunities, internships, higher studies, and career options for your degree.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final CTA -->
+  <div class="cta">
+    <h2>Ready to Start Your College Journey?</h2>
+    <button>🚀 Start My Journey</button>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">GitHub</a>
+    <a href="#">Privacy</a>
+
+    <div class="copyright">
+      © 2026 Student Compass. All rights reserved.
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
