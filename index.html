@@ -14,7 +14,7 @@
             Student Compass
         </h1>
         <nav class="navbar">
-            <a href="#Home">home</a>
+            <a href="#welcome">home</a>
             <a href="#Roadmap">Roadmap</a>
             <a href="#Resource">Resource</a>
             <a href="#About">About</a>
@@ -44,25 +44,31 @@
           </section>
           <section class="next-step">
 
-            <h2>🎯 Today's Next Step</h2>
+    <h2>🎯 Today's Next Step</h2>
 
-            <h3>Learn Variables & Data Types in C</h3>
+    <p id="taskTopic"></p>
 
-            <p>
-            Estimated Time: 45 Minutes
-            </p>
+    <h3 id="taskTitle"></h3>
 
-            <button id="mbtn">Mark as Complete ✅</button>
+    <p id="taskTime"></p>
 
-          </section>
+    <a id="taskLink" href="#" target="_blank">
+        📖 Learn More
+    </a>
+
+    <button id="mbtn">
+        ✅ Mark as Complete
+    </button>
+
+</section>
           <section class="progress">
             📈 Progress
-            <progress id="progressBar" value="0" max="18"></progress>
+            <progress id="progressBar" value="0" max="4"></progress>
             
 
-           28%
+           <strong id="per">0%</strong>
 
-          5 / 18 completed
+          <p id="outoff">0 / 4 completed</p>
           </section>
 
         </aside>
@@ -75,12 +81,12 @@
 
 <details class="card">
     
-<summary><h3>📚 Understand Your Degree</h3>
+<summary><h3>🎓 Understand Your Degree</h3>
 <p>Learn how your degree is structured and what to expect throughout your college journey</p></summary>
 
 <div class="hidden">
 
-<details><summary>📚 What is this degree?</summary>🎯 Your degree is your learning roadmap for the next 4 years.
+<details class="card"><summary>📚 What is this degree?</summary>🎯 Your degree is your learning roadmap for the next 4 years.
 
 It helps you:
 
@@ -90,7 +96,7 @@ It helps you:
 💼 Prepare for internships, placements, and future careers.
 
 💡 Remember: Your degree gives you the foundation, but your skills and projects help you stand out.</details>
-<details><summary>📅 Course duration</summary>⏳ Engineering Degree
+<details class="card"><summary>📅 Course duration</summary>⏳ Engineering Degree
 
 📆 Duration: 4 Years
 📖 Total Semesters: 8
@@ -105,7 +111,7 @@ Every semester usually includes:
 📄 Semester Examination
 
 🎯 Tip: Learn consistently throughout the semester instead of studying only before exams.</details>
-<details><summary>📖Semester structure</summary>A semester is not just about exams.
+<details class="card"><summary>📖Semester structure</summary>A semester is not just about exams.
 
 You'll experience:
 
@@ -120,7 +126,7 @@ You'll experience:
 ✅ Semester Examination
 
 ⭐ Goal: Build knowledge step by step every week.</details>
-<details><summary>📊 Credits & CGPA</summary>Think of Credits as the weight of each subject.
+<details class="card"><summary>📊 Credits & CGPA</summary>Think of Credits as the weight of each subject.
 
 📚 Every subject has different credits.
 
@@ -134,7 +140,7 @@ A good CGPA can help with:
 💼 Placements
 🏢 Internships
 🏅 Scholarships</details>
-<details><summary>💼Career opportunities</summary>Your degree can lead to many career paths.
+<details class="card"><summary>💼Career opportunities</summary>Your degree can lead to many career paths.
 
 Examples:
 
@@ -145,7 +151,7 @@ Examples:
 🔐 Cybersecurity Engineer
 
 🚀 Your career depends on both your degree and the skills you build outside the classroom.</details>
-<details><summary> 🛠 Skills you'll develop</summary>Start building these from Semester 1:
+<details class="card"><summary> 🛠 Skills you'll develop</summary>Start building these from Semester 1:
 
 💻 Technical Skills
 🧩 Problem Solving
@@ -159,8 +165,8 @@ Examples:
 </div>
 
 </details>
-<details>
-    <summary><h3>📅 Academic Timeline<p>Know what happens throughout the semester.</p></h3></summary>
+<details class="card">
+    <summary><h3>📅 Academic Timeline</h3><p>Know what happens throughout the semester.</p></summary>
 
         <div>
             <h4>Week 1-2</h4>
@@ -201,8 +207,8 @@ Examples:
         </div>
     
 </details>
-<details>
-    <summary><h4>📘 Semester Subjects</h4><p></p></summary>
+<details class="card">
+    <summary><h3>📘 Semester Subjects</h3><p></p></summary>
     <div>
         <ul>
 <li><strong>💻 Programming in C</strong> — Learn programming fundamentals.</li>
@@ -215,9 +221,9 @@ Examples:
 </ul>
     </div>
 </details>
-<details>
+<details class="card">>
     <summary>
-        <h4>4. 💻 Skills to Learn</h4><p>Essential skills outside college.</p>
+        <h3>💻 Skills to Learn</h3><p>Essential skills outside college.</p>
 
     </summary>
     <div>
@@ -273,7 +279,7 @@ Important for interviews and teamwork.</li></ul>
 
     </div>
 </details>
-<details>
+<details class="card">
     <summary><h3>🎯 Semester Goals</h3></summary>
     <div>
         <h4>By the end of Semester 1</h4>

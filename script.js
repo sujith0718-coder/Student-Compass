@@ -22,6 +22,73 @@ if (form) {
 }
 
 // Dashboard page
+localStorage.clear();
+let currentTask=Number(localStorage.getItem("currentTask"))||0;
+
+
+const tasks = [
+  {
+    topic: "💻 Programming in C",
+    title: "Learn Variables & Data Types",
+    time: "45 Minutes",
+    resource: "https://www.w3schools.com/c/c_variables.php"
+  },
+  {
+    topic: "💻 Programming in C",
+    title: "Practice if-else Programs",
+    time: "1 Hour",
+    resource: "https://www.programiz.com/c-programming/c-if-else-statement"
+  },
+  {
+    topic: "🌐 Web Development",
+    title: "Learn HTML Basics",
+    time: "1 Hour",
+    resource: "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+  },
+  {
+    topic: "🌐 Web Development",
+    title: "Build Your First Portfolio",
+    time: "2 Hours",
+    resource: "portfolio.html"
+  }
+];
+
+const taskTopic = document.getElementById("taskTopic");
+const taskTitle = document.getElementById("taskTitle");
+const taskTime = document.getElementById("taskTime");
+const taskLink = document.getElementById("taskLink");
+
+function showTask() {
+    taskTopic.textContent = tasks[currentTask].topic;
+    taskTitle.textContent = tasks[currentTask].title;
+    taskTime.textContent = "⏱ " + tasks[currentTask].time;
+    taskLink.href = tasks[currentTask].resource;
+}
+const mbtn=document.getElementById("mbtn");
+const outoff=document.getElementById("outoff");
+const per=document.getElementById("per");
+outoff.textContent = `${currentTask} / ${tasks.length} completed`;
+per.textContent = `${Math.round((currentTask / tasks.length) * 100)}%`;
+if (currentTask >= tasks.length && mbtn) {
+    taskTitle.textContent = "🎉 All tasks completed!";
+    taskTime.textContent = "Great job! Keep learning.";
+    mbtn.textContent = "Completed ✔";
+    mbtn.disabled = true;
+}
+
+if (taskTitle && taskTime) {
+    if (currentTask < tasks.length) {
+        showTask();
+        
+    } else {
+        taskTitle.textContent = "🎉 All tasks completed!";
+        taskTime.textContent = "Great job! Keep learning.";
+        mbtn.textContent="Completed ✔"
+        mbtn.disabled=true;
+    }
+}
+
+
 const name = localStorage.getItem("studentName");
 const deg = localStorage.getItem("studyPath");
 const sem = localStorage.getItem("semester");
@@ -34,21 +101,41 @@ if (welcome && name && semester && degree ) {
     degree.textContent = deg;
     semester.textContent = sem;
 }
-
 let i= Number(localStorage.getItem("completedTasks"))||0;
 let progressBar=document.getElementById("progressBar");
-const mbtn=document.getElementById("mbtn");
+
+if(mbtn)
+{
 mbtn.addEventListener("click",function(){
     i++;
 localStorage.setItem("completedTasks",i);
+currentTask++;
+localStorage.setItem("currentTask",currentTask)
+if (taskTitle && taskTime) {
+    if (currentTask < tasks.length) {
+        tasks[currentTask].completed=true;
+        outoff.textContent = `${currentTask} / ${tasks.length} completed`;
+        per.textContent = `${Math.round((currentTask / tasks.length) * 100)}%`;
+        showTask();
+        
+        
+    } else {
+        taskTitle.textContent = "🎉 All tasks completed!";
+        taskTime.textContent = "Great job! Keep learning.";
+        mbtn.textContent = "Completed ✔";
+          mbtn.disabled = true;
+    }
+
+}
   progressBar.value=i;
 })
-
+}
 
 
 if(progressBar)
 {
     progressBar.value=i;
 }
+
 
 
