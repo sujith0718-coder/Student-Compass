@@ -197,15 +197,15 @@ function weeklyshowTask() {
 
     weeklytaskTopic.textContent = weeklytasks[weeklycurrentTask].topic;
 
-    weeklytaskTitle.textContent = weeklytasks[weeklycurrentTask].title;
+    weeklytaskTitle.textContent ="✨ "+weeklytasks[weeklycurrentTask].title;
 
-    weeklytaskDescription.textContent = weeklytasks[weeklycurrentTask].description;
+    weeklytaskDescription.textContent = "📝 "+weeklytasks[weeklycurrentTask].description;
 
     weeklytaskDifficulty.textContent =
-        "Difficulty: " + weeklytasks[weeklycurrentTask].difficulty;
+        "⭐ " + weeklytasks[weeklycurrentTask].difficulty;
 
     weeklytaskTime.textContent =
-        "Estimated Time: " + weeklytasks[weeklycurrentTask].time;
+        "⏱  " + weeklytasks[weeklycurrentTask].time;
 
     weeklytaskPoints.textContent =
         "🏆 +" + weeklytasks[weeklycurrentTask].points + " XP";
@@ -303,8 +303,6 @@ if (weeklytaskTitle && weeklytaskTime) {
         
         
     } else {
-        weeklytaskTitle.textContent = "🎉 All tasks completed!";
-        weeklytaskTime.textContent = "Great job! Keep learning.";
         weeklymbtn.textContent = "Completed ✔";
         weeklyoutoff.textContent = `${weeklycurrentTask} / ${weeklytasks.length} completed`;
         weeklyper.textContent = `${Math.round((weeklycurrentTask / weeklytasks.length) * 100)}%`;
@@ -313,7 +311,7 @@ if (weeklytaskTitle && weeklytaskTime) {
            weeklytaskTopic.textContent=
  weeklytaskTopic.textContent = "🏆 Weekly Challenge Complete";
 
-weeklytaskTitle.textContent = "Congratulations! You completed all weekly tasks.";
+weeklytaskTitle.textContent = "🎉 Congratulations! You completed all weekly tasks.";
 
 weeklytaskDescription.textContent =
     "You stayed consistent and finished every challenge. Keep applying these skills in your projects.";
@@ -327,27 +325,10 @@ weeklytaskPoints.textContent = `🏆 Total XP Earned: ${p} XP`;
 weeklytaskLink.textContent = "📚 Review Learning Resources";
 weeklytaskLink.href = "#Resource";
 confetti({
-    particleCount: 180,
+    particleCount: 300,
     spread: 100,
-    startVelocity: 50,
-    origin: { x: 0.5, y: 0.7 }
+    origin: { y: 0.6 }
 });
-
-setTimeout(() => {
-    confetti({
-        particleCount: 150,
-        spread: 120,
-        angle: 60,
-        origin: { x: 0, y: 0.6 }
-    });
-
-    confetti({
-        particleCount: 150,
-        spread: 120,
-        angle: 120,
-        origin: { x: 1, y: 0.6 }
-    });
-}, 300);
  
     }
 
