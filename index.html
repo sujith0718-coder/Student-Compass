@@ -62,13 +62,50 @@
 
 </section>
           <section class="progress">
-            📈 Progress
+            📈 Today's Progress
             <progress id="progressBar" value="0" max="4"></progress>
             
 
            <strong id="per">0%</strong>
 
           <p id="outoff">0 / 4 completed</p>
+          </section>
+
+          <section class="weekly-next-step">
+
+    <h2>🎯 Weekly tasks</h2>
+
+    <p id="weeklytaskTopic"></p>
+
+    <h3 id="weeklytaskTitle"></h3>
+
+    <p id="weeklytaskDescription"></p>
+
+    <p id="weeklytaskDifficulty"></p>
+
+    <p id="weeklytaskTime"></p>
+
+    <p id="weeklytaskPoints"></p>
+
+    <a id="weeklytaskLink" target="_blank">
+        📖 Learn More
+    </a>
+    
+    <button id="weeklymbtn">
+        ✅ Mark as Complete
+    </button>
+
+</section>
+
+    <section class="weeklyprogress">
+            📈 Weekly Progress
+            <progress id="weeklyprogressBar" value="0" max="10"></progress>
+            
+
+           <strong id="weeklyper">0%</strong>
+
+          <p id="weeklyoutoff">0 / 10 completed</p>
+          <p id="wtaskPoint">🏆 </p>
           </section>
 
         </aside>
@@ -350,6 +387,7 @@ Important for interviews and teamwork.</li></ul>
 </section>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
    <script src="script.js"></script> 
 </body>
 </html>

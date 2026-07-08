@@ -136,8 +136,8 @@ small{
     gap: 20px;
 }
 .dashboard,
-.next-step,
-.progress{
+.next-step,.weekly-next-step,
+.progress,.weeklyprogress{
     background:white;
     padding: 20px;
     border-radius: 16px;
@@ -145,8 +145,8 @@ small{
     transition:0.3s;
 }
 .dashboard:hover,
-.next-step:hover,
-.progress:hover{
+.next-step:hover,.weekly-next-step:hover,
+.progress:hover,.weeklyprogress:hover{
     transform: translateY(-5px);
 }
 .card{
