@@ -26,5 +26,16 @@ function updateProgress(){
     percent.textContent = Math.round(percentage) + "%";
     count.textContent = completed + " / " + lessons.length + " completed";
 }
-
 updateProgress();
+const name = localStorage.getItem("studentName");
+const deg = localStorage.getItem("studyPath");
+const sem = localStorage.getItem("semester");
+
+const welcome = document.getElementById("welcome");
+const degree=document.getElementById("degree");
+const semester=document.getElementById("semester");
+if (welcome && name && semester && degree ) {
+    welcome.textContent = `Welcome, ${name}! 👋`;
+    degree.textContent = deg;
+    semester.textContent = sem;
+}
