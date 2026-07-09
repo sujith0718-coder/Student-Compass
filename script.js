@@ -14,7 +14,7 @@ if (form) {
         localStorage.setItem("semester", sem);
 
         if (path === "💻 Computer Science & IT") {
-            window.location.href = "index.html";
+            window.location.href = "cse.html";
         } else {
             window.location.href = "engineering.html";
         }
