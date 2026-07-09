@@ -135,7 +135,7 @@ small{
     flex-direction: column;
     gap: 24px;
 }
-.dashboard,
+.dashboard,#degOverView,
 .next-step,.weekly-next-step,
 .progress,.weeklyprogress{
     background:white;
@@ -144,7 +144,7 @@ small{
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition:0.3s;
 }
-.dashboard:hover,
+.dashboard:hover,#degOverView:hover,
 .next-step:hover,.weekly-next-step:hover,
 .progress:hover,.weeklyprogress:hover{
     transform: translateY(-5px);
@@ -272,7 +272,7 @@ small{
     font-weight:600;
 }
 .dashboard,
-.next-step,
+.next-step,#degOverView,
 .progress,
 .weekly-next-step,
 .weeklyprogress{
@@ -282,11 +282,11 @@ small{
 border-left: 5px solid #fb7185;
 }
 .next-step h2,
-.weekly-next-step h2{
+.weekly-next-step h2,#degOverView h2{
     margin-bottom:18px;
 }
 .next-step p,
-.weekly-next-step p{
+.weekly-next-step p,#degOverView li{
     margin-bottom:12px;
 }
 .next-step h3,
@@ -373,4 +373,15 @@ progress{
 
 .card strong{
     color: rgb(1,1,114);
+}
+.resource-card h3{
+    color: rgb(1,1,114);
+    margin: 22px 0 10px;
+    font-size: 1.20rem;
+}
+.resource-card p{
+    margin: 10px 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }

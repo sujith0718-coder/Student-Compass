@@ -16,7 +16,7 @@ if (form) {
         if (path === "💻 Computer Science & IT") {
             window.location.href = "index.html";
         } else {
-            window.location.href = "final.html";
+            window.location.href = "engineering.html";
         }
     });
 }
