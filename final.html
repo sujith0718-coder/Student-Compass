@@ -240,7 +240,7 @@
       Student Compass helps first-year students understand their degree, semester,
       skills, and career path — all in one place.
     </p>
-    <button>🚀 Start My Journey</button>
+    <button class="Button">🚀 Start My Journey</button>
   </div>
 
   <!-- Problem Section -->
@@ -279,7 +279,7 @@
   <!-- Final CTA -->
   <div class="cta">
     <h2>Ready to Start Your College Journey?</h2>
-    <button>🚀 Start My Journey</button>
+    <button class="Button">🚀 Start My Journey</button>
   </div>
 
   <!-- Footer -->
@@ -293,6 +293,14 @@
       © 2026 Student Compass. All rights reserved.
     </div>
   </div>
-<script src="script.js"></script>
+<script>
+const buttons = document.querySelectorAll(".Button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        window.history.back();
+    });
+});
+</script>
 </body>
 </html>
