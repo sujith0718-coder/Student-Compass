@@ -397,11 +397,7 @@ progress{
         flex-direction:column;
     }
 
-    .sidebar{
-        width:100%;
-    }
-
-    #content{
+    .sidebar,#content{
         width:100%;
     }
 
@@ -470,3 +466,4 @@ select,
 button{
     width:100%;
 }
+
