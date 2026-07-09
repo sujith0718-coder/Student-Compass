@@ -23,7 +23,7 @@ if (form) {
 
 // Dashboard page
 
-localStorage.clear();
+//localStorage.clear();
 let currentTask=Number(localStorage.getItem("currentTask"))||0;
 let weeklycurrentTask=Number(localStorage.getItem("weeklycurrentTask"))||0;
 let p=Number(localStorage.getItem("p"))||0;
