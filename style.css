@@ -384,3 +384,89 @@ progress{
     font-size: 0.95rem;
     line-height: 1.5;
 }
+
+
+/*mobile homepage*/
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    #content{
+        width:100%;
+    }
+
+    .header{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .navbar{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .roadmap-list,
+    .resource-list{
+        grid-template-columns:1fr;
+    }
+
+    .top h2{
+        font-size:1.6rem;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    button{
+        width:100%;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    progress{
+        width:100%;
+    }
+
+}
+/*mobile loginpage*/
+@media(max-width:768px){
+
+.cont{
+    flex-direction:column;
+}
+
+.hero,
+.login{
+    width:100%;
+}
+
+.hero{
+    text-align:center;
+}
+
+}
+body{
+    overflow-x:hidden;
+}
+input,
+select,
+button{
+    width:100%;
+}
