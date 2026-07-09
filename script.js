@@ -268,7 +268,7 @@ if (taskTitle && taskTime) {
         outoff.textContent = `${currentTask} / ${tasks.length} completed`;
         per.textContent = `${Math.round((currentTask / tasks.length) * 100)}%`;
           mbtn.disabled = true;
-        confetti({
+       confetti({
     particleCount: 120,
     spread: 90,
     startVelocity: 45,
@@ -325,10 +325,27 @@ weeklytaskPoints.textContent = `🏆 Total XP Earned: ${p} XP`;
 weeklytaskLink.textContent = "📚 Review Learning Resources";
 weeklytaskLink.href = "#Resource";
 confetti({
-    particleCount: 300,
+    particleCount: 180,
     spread: 100,
-    origin: { y: 0.6 }
+    startVelocity: 50,
+    origin: { x: 0.5, y: 0.7 }
 });
+
+setTimeout(() => {
+    confetti({
+        particleCount: 150,
+        spread: 120,
+        angle: 60,
+        origin: { x: 0, y: 0.6 }
+    });
+
+    confetti({
+        particleCount: 150,
+        spread: 120,
+        angle: 120,
+        origin: { x: 1, y: 0.6 }
+    });
+}, 300);
  
     }
 
